@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: hackernews_clone_production
-  username: hackernews_clone
-  password: <%= ENV['HACKERNEWS_CLONE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
